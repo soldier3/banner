@@ -1,0 +1,152 @@
+/* line 5, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../fonts/OpenSans.ttf") format("truetype"), url("../fonts/OpenSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+/* line 4, ../sass/mine.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 8, ../sass/mine.scss */
+body {
+  background-color: #0073aa;
+}
+
+/* line 12, ../sass/mine.scss */
+.container-fluid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 364px 1fr;
+  grid-template-rows: 1fr 144px 1fr;
+}
+
+/* line 19, ../sass/mine.scss */
+.banner {
+  background: url("../img/bg-banner.jpg") no-repeat;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  padding: 20px;
+  border-radius: 3px;
+  font-size: 15px;
+  line-height: 21px;
+  font-family: 'OpenSans', sans-serif;
+  color: #06354b;
+}
+/* line 30, ../sass/mine.scss */
+.banner:hover img {
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* line 45, ../sass/mine.scss */
+.head-banner {
+  background: url("../img/box-pic.jpg") no-repeat;
+  padding-left: 35px;
+  height: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 200%;
+}
+
+/* line 54, ../sass/mine.scss */
+.text-banner > img {
+  vertical-align: bottom;
+}
+
+/* line 59, ../sass/mine.scss */
+.wraper-banner {
+  display: flex;
+  flex-direction: column;
+  width: 275px;
+}
+/* line 64, ../sass/mine.scss */
+.wraper-banner > div {
+  margin: 5px 0;
+}
+
+@media (max-width: 576px) {
+  /* line 71, ../sass/mine.scss */
+  .head-banner {
+    order: 1;
+  }
+}

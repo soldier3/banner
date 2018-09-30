@@ -1,0 +1,74 @@
+@import "compass/reset";
+@import "_fonts";
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #0073aa;
+}
+
+.container-fluid{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 364px 1fr;
+    grid-template-rows: 1fr 144px 1fr; 
+}
+
+.banner{
+    background: url('../img/bg-banner.jpg') no-repeat;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    padding: 20px;
+    border-radius: 3px;
+    font-size: 15px;
+    line-height: 21px;
+    font-family: 'OpenSans', sans-serif;
+    color: #06354b;
+    
+    &:hover img{
+        animation: rotation 2s infinite linear;
+    }
+}
+
+@keyframes rotation {
+    from {
+            transform: rotate(0deg);
+    }
+    to {
+            transform: rotate(360deg);
+    }
+}
+
+
+.head-banner{
+    background: url("../img/box-pic.jpg") no-repeat;
+    padding-left: 35px;
+    height: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 200%;
+}
+
+.text-banner > img{
+        vertical-align: bottom;
+    }
+
+
+.wraper-banner{
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+
+    & > div{
+        margin: 5px 0;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .head-banner{
+        order: 1;
+    }
+}
